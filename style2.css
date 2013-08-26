@@ -1,0 +1,49 @@
+/* 
+    Document   : style2
+    Created on : 7 mai 2013, 23:18:52
+    Author     : TAYACHE
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+header {
+    padding: 5px;
+    border : 1px solid #00f ;
+    background: #ccc;
+}
+nav{
+    padding: 5px;
+    border : 1px solid #0cf ;
+    background: #cbc;
+    height : 24px;
+}
+nav a {
+    padding: 5px;
+    background: #cbc;
+    height : 24px;
+    text-color : #0f0;
+    font-family: serif;
+}
+section{
+    
+    padding: 5px;
+    border : 1px solid #c0f ;
+    background: #c9c;
+    width: 80%;
+}
+footer{
+    padding: 5px;
+    border : 1px solid #00f ;
+    background: #9c0;
+}
+aside{
+    padding: 5px;
+    border : 1px solid #00f ;
+    background: #ccc;
+    width: 18%;
+    float: right;
+    position: relative;
+    top: 40px;
+ 
+}
+

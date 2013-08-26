@@ -1,0 +1,80 @@
+<!--
+To change this template, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <link rel="stylesheet" type="text/css" href="Style1.css">                
+        <title>Aceuil </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body onresize="ChangeHeight()" onload="ChangeHeight()">
+         <div id="global_container">        
+        <div id="marge">TODO marge centent </div>    
+
+        <div id="container">
+        <div id="header">
+            
+            <menu id="menu_header">
+                <ul>
+                    <li><a href="Home.php" >Aceuil</a></li>
+                    <li><a href="Inscription.php">Inscription</a></li>
+                    <li><a href="Contact.php">Contact</a></li>
+                </ul>
+
+
+             </menu>    
+        </div>
+            <div id="center" onmousemove="ChangeHeight()" >
+                <?php include 'index.php'; ?>heloo world
+                
+            </div>
+        <div id="footer">TOFO footer content</div>
+        </div>
+        </div>
+    </body>
+    <script language="javascript">
+ 
+ 
+ 
+function ChangeHeight()
+ 
+{
+ 
+    var browser = navigator.appName;
+ 
+     
+ alert(document.getElementById('center').style.height);
+
+    if(browser == "Microsoft Internet Explorer")
+ 
+    {
+ 
+        var clientHeight = document.body.clientHeight;
+ 
+        var contentHeight = clientHeight - 218;
+ 
+        document.getElementById('center').style.height = contentHeight;
+ 
+        }
+ 
+    else
+ 
+    {        var clientHeight = window.innerHeight;
+ 
+        var contentHeight = clientHeight - 218;
+ 
+        document.getElementById('center').style.height = contentHeight;
+ 
+        }
+
+}
+
+ 
+
+</script>
+
+
+</html>
